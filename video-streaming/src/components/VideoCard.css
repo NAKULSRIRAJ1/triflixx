@@ -1,0 +1,12 @@
+.video-card {
+    width: 250px;
+    background: #222;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .video-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  

@@ -1,0 +1,295 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #1c1c1c;
+}
+
+/* Left Side - Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Right Side - Navigation */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Language Dropdown */
+.language-dropdown {
+    display: flex;
+    align-items: center;
+    background: rgb(255, 249, 249);
+    border: 1px solid rgb(20, 18, 18);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.language-dropdown select {
+    background: transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Sign In Button */
+.signin-btn {
+    background: red;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+/* Popup Styles */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.popup-content h2 {
+    margin-bottom: 15px;
+}
+
+/* Form Inputs */
+.popup-content input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Forgot Password Link */
+.forgot-password {
+    display: block;
+    margin-bottom: 10px;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Submit Button */
+.dragon-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Close Button */
+.close-btn {
+    background-color: gray;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+/* Logo Image */
+.logo-img {
+    height: 50px; /* Adjust size */
+    width: auto;
+}
+/* Upload Button */
+.upload-btn {
+    background: blue;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+/* Popup Styling */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.popup-content h2 {
+    margin-bottom: 15px;
+}
+
+/* Form Inputs */
+.popup-content input, .popup-content select {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Submit Button */
+.dragon-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Close Button */
+.close-btn {
+    background-color: gray;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+/* Add styles for Sign Up button */
+.signup-btn {
+    background: green;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+/* Adjust popup styles for consistency */
+.popup-content input, .popup-content select {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style LET'S BEGIN THE JOURNEY button */
+.dragon-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.switch-popup {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.switch-link {
+    color: blue;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+/* Popup Styles with Smooth Animation */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: slideUp 0.3s ease-out forwards;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Close Button Hover Effect */
+.close-btn:hover {
+    background-color: darkgray;
+}
+
