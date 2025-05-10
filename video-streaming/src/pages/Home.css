@@ -1,0 +1,232 @@
+/* Fullscreen Preloader */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Centered logo */
+.loader-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo in the center */
+.loading-logo {
+    width: 120px;
+    height: auto;
+}
+
+/* Rotating red border */
+.rotating-border {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 4px solid red;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: rotateBorder 1s linear infinite;
+}
+
+/* Border Rotation Animation */
+@keyframes rotateBorder {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Glowing Logo Effect After Preloader */
+@keyframes glowEffect {
+    0% {
+        filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+    }
+    50% {
+        filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1));
+    }
+    100% {
+        filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+    }
+}
+
+.logo-container img {
+    width: 450px;
+    height: auto;
+    animation: glowEffect 2s ease-in-out;
+}
+
+/* Main Content Styling */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    height: 100vh;
+    position: relative;
+    background: url("../assets/NETA.jpg") no-repeat center center/cover;
+}
+
+/* Vignette Effect */
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Ensure Content Stays Above the Overlay */
+.logo-container, .hero-section {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section {
+    text-align: center;
+    max-width: 600px;
+    color: white;
+}
+
+.hero-section h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+}
+
+.email-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.email-form input {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.email-form button {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* Fullscreen Video Styling */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    z-index: 999;
+}
+
+.intro-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Ensure no extra margin or padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Make sure the HTML and body cover the full viewport */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Ensure .home covers the full screen */
+.home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0;
+    background: url("../assets/NETA.jpg") no-repeat center center/cover;
+}
+
+/* Prevent unwanted spacing on the preloader */
+.preloader, .video-container {
+    width: 100vw;
+    height: 100vh;
+}
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+}
+/* Popup Styles */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.popup-content h2 {
+    margin-bottom: 15px;
+}
+
+.popup-content input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup-content button {
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-content .close-btn {
+    background-color: gray;
+    margin-top: 10px;
+}
